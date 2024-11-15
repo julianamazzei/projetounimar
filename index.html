@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html> 
+
+    <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--titulo da página-->
+    <title>Cadastros Academia</title>
+
+    <link rel="stylesheet" type="text/css" href="index.CSS juliana" media="screen">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(45deg, #282c34, #4e4376);
+            color: #fff;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            overflow: hidden;
+        }
+        .container {
+            text-align: center;
+            max-width: 600px;
+            padding: 20px;
+            border-radius: 15px;
+            background-color: rgba(0, 0, 0, 0.7);
+            box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
+        }
+        h1 {
+            font-size: 3rem;
+            margin-bottom: 20px;
+            color: #ffd700;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+        }
+        p {
+            font-size: 1.2rem;
+            margin-bottom: 20px;
+        }
+        .info {
+            background-color: #333;
+            padding: 10px;
+            border-radius: 10px;
+        }
+        .button {
+            text-decoration: none;
+            padding: 10px 20px;
+            background-color: #ffd700;
+            color: #1b9e80;
+            border-radius: 5px;
+            font-weight: bold;
+            transition: background-color 0.3s;
+        }
+        .button:hover {
+            background-color: #ffa500;
+        }
+    </style>
+
+    <!--cabeçalho com titulo e subtitulo-->
+    <div>
+        <h1 id="titulo">Cadastros</h1>
+        <p id="subtitulo">Usuários da Academia</p><br>
+    </div>
+
+    <!-- Inicio do Formulário-->
+     <form>
+
+     <fieldset class="usuario"> <!--grupo-->
+        <div class="campo">
+            <label for="nome completo"><strong>Nome completo</strong></label>
+            <input type="text" name="nome completo"
+            id= "nome completo" required>
+        </div>
+
+<!--telefone-->
+<div class="campo">
+    <label for="telefone"></strong> Telefone</strong></label>
+    <input type="number" name="telefone" id="telefone" required>
+
+    <div class="campo">
+    <label for="email"></strong>Email</strong></label>
+    <input type="email" name="email" id="email" required>
+</div>
+
+     <!--campo com objetivos do ususário-->
+     <div class="campo">
+        <label><strong>Qual/Quais seus objetivos na Academia?</strong></label>
+        <label>
+        <input type="radio" name="objetivo" value="saude" checked>Saúde
+    </label>
+    <label>
+        <input type="radio" name="objetivo" value="perder peso" checked>Perder Peso
+    </label>
+    <label>
+        <input type="radio" name="objetivo" value="ambos" checked>Ambos
+    </label>
+    <label>
+        <input type="radio" name="objetivo" value="Outros" checked>Outros
+    </label>
+    </div>
+
+    <!--dias de treino -->
+     <fieldset class="grupo">
+        <div id="check">
+        <label><strong>Frequência na Academia</strong></label><br><br>
+        <input type="chekbox" id="frequência" name="frequência" value="1x por semana">
+        <label for="frequência"> 1x por semana</label>
+        <input type="chekbox" id="frequência" name="frequência" value="2x por semana">
+        <label for="frequência"> 2x por semana</label>
+        <input type="chekbox" id="frequência" name="frequência" value="3x por semana">
+        <label for="frequência"> 3x por semana</label>
+        <input type="chekbox" id="frequência" name="frequência" value="4x por semana">
+        <label for="frequência"> 4x por semana</label>
+        <input type="chekbox" id="frequência" name="frequência" value="5x por semana">
+        <label for="frequência"> 5x por semana</label>
+        <input type="chekbox" id="frequência" name="frequência" value="livre">
+        <label for="frequência"> Livre</label>
+    </div>
+    </fieldset>
+
+    <!--botão para enviar cadastro-->
+    <button class="botao" type="submit" onsubmit="">Concluído</button>
+
+    </html>
+    </head>
+    </div>
+    </form>
+    </fieldset>
+    
+
