@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="pt-BR">
 
@@ -16,7 +17,7 @@
         <p id="subtitulo">Usuários da Academia</p>
 
         <!-- Início do Formulário -->
-        <form> 
+        <form action="salvar.php" method="POST"> 
             <!-- Nome Completo -->
             <div class="campo">
                 <label for="nome-completo"><strong>Nome completo</strong></label>
@@ -61,3 +62,4 @@
             <button class="button" type="submit">Concluído</button>
         </form>
     </div>
+
